@@ -108,7 +108,8 @@ namespace Project1 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(12, 37);
+			this->label1->Location = System::Drawing::Point(8, 24);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(246, 25);
 			this->label1->TabIndex = 0;
@@ -119,7 +120,8 @@ namespace Project1 {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label2->Location = System::Drawing::Point(12, 93);
+			this->label2->Location = System::Drawing::Point(8, 60);
+			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(49, 25);
 			this->label2->TabIndex = 1;
@@ -130,7 +132,8 @@ namespace Project1 {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(12, 151);
+			this->label3->Location = System::Drawing::Point(8, 98);
+			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(182, 25);
 			this->label3->TabIndex = 2;
@@ -141,8 +144,8 @@ namespace Project1 {
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-
-			this->label4->Location = System::Drawing::Point(12, 215);
+			this->label4->Location = System::Drawing::Point(8, 140);
+			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(72, 25);
 			this->label4->TabIndex = 3;
@@ -153,7 +156,8 @@ namespace Project1 {
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label5->Location = System::Drawing::Point(12, 278);
+			this->label5->Location = System::Drawing::Point(8, 181);
+			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(79, 25);
 			this->label5->TabIndex = 4;
@@ -161,24 +165,27 @@ namespace Project1 {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(130, 37);
+			this->textBox1->Location = System::Drawing::Point(180, 29);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(245, 26);
+			this->textBox1->Size = System::Drawing::Size(165, 20);
 			this->textBox1->TabIndex = 5;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(130, 92);
+			this->textBox2->Location = System::Drawing::Point(180, 60);
+			this->textBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(245, 26);
+			this->textBox2->Size = System::Drawing::Size(165, 20);
 			this->textBox2->TabIndex = 6;
 			// 
 			// maskedTextBox1
 			// 
-			this->maskedTextBox1->Location = System::Drawing::Point(254, 152);
+			this->maskedTextBox1->Location = System::Drawing::Point(256, 104);
+			this->maskedTextBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->maskedTextBox1->Mask = L"00/00/0000";
 			this->maskedTextBox1->Name = L"maskedTextBox1";
-			this->maskedTextBox1->Size = System::Drawing::Size(131, 26);
+			this->maskedTextBox1->Size = System::Drawing::Size(89, 20);
 			this->maskedTextBox1->TabIndex = 7;
 			this->maskedTextBox1->ValidatingType = System::DateTime::typeid;
 			// 
@@ -189,36 +196,40 @@ namespace Project1 {
 				L"Україна", L"США", L"Велика Британія", L"Франція",
 					L"Німеччина"
 			});
-			this->comboBox1->Location = System::Drawing::Point(104, 212);
+			this->comboBox1->Location = System::Drawing::Point(263, 144);
+			this->comboBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(121, 28);
+			this->comboBox1->Size = System::Drawing::Size(82, 21);
 			this->comboBox1->TabIndex = 8;
 			// 
 			// comboBox2
 			// 
 			this->comboBox2->FormattingEnabled = true;
 			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"1", L"2", L"3", L"4" });
-			this->comboBox2->Location = System::Drawing::Point(33, 428);
+			this->comboBox2->Location = System::Drawing::Point(22, 278);
+			this->comboBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->comboBox2->Name = L"comboBox2";
-			this->comboBox2->Size = System::Drawing::Size(121, 28);
+			this->comboBox2->Size = System::Drawing::Size(82, 21);
 			this->comboBox2->TabIndex = 9;
 			this->comboBox2->Text = L"Курс";
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(130, 277);
+			this->textBox3->Location = System::Drawing::Point(87, 180);
+			this->textBox3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBox3->Multiline = true;
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->textBox3->Size = System::Drawing::Size(219, 134);
+			this->textBox3->Size = System::Drawing::Size(147, 88);
 			this->textBox3->TabIndex = 10;
 			// 
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(791, 36);
+			this->pictureBox1->Location = System::Drawing::Point(527, 23);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(305, 204);
+			this->pictureBox1->Size = System::Drawing::Size(203, 133);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 11;
 			this->pictureBox1->TabStop = false;
@@ -227,24 +238,25 @@ namespace Project1 {
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(1060, 35);
+			this->pictureBox2->Location = System::Drawing::Point(707, 23);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(305, 204);
+			this->pictureBox2->Size = System::Drawing::Size(203, 133);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox2->TabIndex = 12;
 			this->pictureBox2->TabStop = false;
 			this->pictureBox2->Visible = false;
 			// 
 			// button1
-			//
-
+			// 
 			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
 				static_cast<System::Int32>(static_cast<System::Byte>(128)));
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button1->Location = System::Drawing::Point(1083, 266);
+			this->button1->Location = System::Drawing::Point(722, 173);
+			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(125, 66);
+			this->button1->Size = System::Drawing::Size(83, 43);
 			this->button1->TabIndex = 13;
 			this->button1->Text = L"<=";
 			this->button1->UseVisualStyleBackColor = false;
@@ -253,9 +265,10 @@ namespace Project1 {
 			// flowLayoutPanel1
 			// 
 			this->flowLayoutPanel1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->flowLayoutPanel1->Location = System::Drawing::Point(1073, 260);
+			this->flowLayoutPanel1->Location = System::Drawing::Point(715, 169);
+			this->flowLayoutPanel1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->flowLayoutPanel1->Name = L"flowLayoutPanel1";
-			this->flowLayoutPanel1->Size = System::Drawing::Size(279, 72);
+			this->flowLayoutPanel1->Size = System::Drawing::Size(187, 48);
 			this->flowLayoutPanel1->TabIndex = 14;
 			// 
 			// button2
@@ -264,9 +277,10 @@ namespace Project1 {
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button2->Location = System::Drawing::Point(1214, 266);
+			this->button2->Location = System::Drawing::Point(809, 173);
+			this->button2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(125, 66);
+			this->button2->Size = System::Drawing::Size(83, 43);
 			this->button2->TabIndex = 15;
 			this->button2->Text = L"=>";
 			this->button2->UseVisualStyleBackColor = false;
@@ -279,9 +293,10 @@ namespace Project1 {
 				L"1СОМ", L"2СОМ", L"3СОМ", L"4СОМ", L"1СОФ", L"2СОЇ",
 					L"3М", L"4МС"
 			});
-			this->comboBox3->Location = System::Drawing::Point(185, 428);
+			this->comboBox3->Location = System::Drawing::Point(123, 278);
+			this->comboBox3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->comboBox3->Name = L"comboBox3";
-			this->comboBox3->Size = System::Drawing::Size(121, 28);
+			this->comboBox3->Size = System::Drawing::Size(82, 21);
 			this->comboBox3->TabIndex = 16;
 			this->comboBox3->Text = L"Група";
 			// 
@@ -292,9 +307,10 @@ namespace Project1 {
 				L"Середня освіта. Математика", L"Середня освіта. Фізика",
 					L"Середня освіта. Інформатика"
 			});
-			this->comboBox4->Location = System::Drawing::Point(349, 428);
+			this->comboBox4->Location = System::Drawing::Point(233, 278);
+			this->comboBox4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->comboBox4->Name = L"comboBox4";
-			this->comboBox4->Size = System::Drawing::Size(265, 28);
+			this->comboBox4->Size = System::Drawing::Size(178, 21);
 			this->comboBox4->TabIndex = 17;
 			this->comboBox4->Text = L"Спеціальність";
 			// 
@@ -305,27 +321,29 @@ namespace Project1 {
 				L"Програмування", L"Вища математика", L"Історія",
 					L"Інформатика", L"Англійська мова"
 			});
-			this->checkedListBox1->Location = System::Drawing::Point(33, 501);
+			this->checkedListBox1->Location = System::Drawing::Point(22, 326);
+			this->checkedListBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->checkedListBox1->Name = L"checkedListBox1";
-			this->checkedListBox1->Size = System::Drawing::Size(273, 326);
+			this->checkedListBox1->Size = System::Drawing::Size(183, 208);
 			this->checkedListBox1->TabIndex = 18;
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(104, 855);
+			this->button3->Location = System::Drawing::Point(69, 556);
+			this->button3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(151, 47);
+			this->button3->Size = System::Drawing::Size(101, 31);
 			this->button3->TabIndex = 19;
 			this->button3->Text = L"Я вивчаю";
 			this->button3->UseVisualStyleBackColor = true;
-
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(945, 855);
+			this->button4->Location = System::Drawing::Point(630, 556);
+			this->button4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(151, 47);
+			this->button4->Size = System::Drawing::Size(101, 31);
 			this->button4->TabIndex = 20;
 			this->button4->Text = L"Про мене";
 			this->button4->UseVisualStyleBackColor = true;
@@ -333,11 +351,12 @@ namespace Project1 {
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(945, 501);
+			this->textBox4->Location = System::Drawing::Point(630, 326);
+			this->textBox4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->textBox4->Multiline = true;
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->ScrollBars = System::Windows::Forms::ScrollBars::Vertical;
-			this->textBox4->Size = System::Drawing::Size(324, 326);
+			this->textBox4->Size = System::Drawing::Size(217, 213);
 			this->textBox4->TabIndex = 21;
 			// 
 			// linkLabel1
@@ -347,7 +366,8 @@ namespace Project1 {
 			this->linkLabel1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->linkLabel1->ForeColor = System::Drawing::Color::Blue;
-			this->linkLabel1->Location = System::Drawing::Point(43, 944);
+			this->linkLabel1->Location = System::Drawing::Point(29, 614);
+			this->linkLabel1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->linkLabel1->Name = L"linkLabel1";
 			this->linkLabel1->Size = System::Drawing::Size(31, 46);
 			this->linkLabel1->TabIndex = 22;
@@ -359,18 +379,18 @@ namespace Project1 {
 			// listBox1
 			// 
 			this->listBox1->FormattingEnabled = true;
-			this->listBox1->ItemHeight = 20;
-			this->listBox1->Location = System::Drawing::Point(363, 501);
+			this->listBox1->Location = System::Drawing::Point(242, 326);
+			this->listBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(251, 324);
+			this->listBox1->Size = System::Drawing::Size(169, 212);
 			this->listBox1->TabIndex = 23;
 			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::listBox1_SelectedIndexChanged);
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1380, 1037);
+			this->ClientSize = System::Drawing::Size(920, 674);
 			this->Controls->Add(this->listBox1);
 			this->Controls->Add(this->linkLabel1);
 			this->Controls->Add(this->textBox4);
@@ -395,6 +415,7 @@ namespace Project1 {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->flowLayoutPanel1);
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
