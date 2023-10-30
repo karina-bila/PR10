@@ -335,7 +335,6 @@ namespace Project1 {
 			this->button3->TabIndex = 19;
 			this->button3->Text = L"Я вивчаю";
 			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// button4
 			// 
@@ -346,7 +345,6 @@ namespace Project1 {
 			this->button4->TabIndex = 20;
 			this->button4->Text = L"Про мене";
 			this->button4->UseVisualStyleBackColor = true;
-			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 			// 
 			// textBox4
 			// 
@@ -383,7 +381,6 @@ namespace Project1 {
 			this->listBox1->Name = L"listBox1";
 			this->listBox1->Size = System::Drawing::Size(169, 212);
 			this->listBox1->TabIndex = 23;
-			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::listBox1_SelectedIndexChanged);
 			// 
 			// MyForm
 			// 
@@ -426,34 +423,16 @@ namespace Project1 {
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		pictureBox1->Visible = true;
+		pictureBox2->Visible = false;
 	}
 
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		pictureBox2->Visible = true;
+		pictureBox1->Visible = false;
 	}
 
 	private: System::Void linkLabel1_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e) {
 		System::Diagnostics::Process::Start("https://www.facebook.com/kkarina.bila/");
-	}
-	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-		for (int i = 0; i < checkedListBox1->CheckedItems->Count; i++)
-		{
-			listBox1->Items->Add(checkedListBox1->CheckedItems[i]);
-		}
-	}
-	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-		textBox4->Text = "Прiзвище: " + textBox1->Text + "\r\n";
-		textBox4->Text += "IM'я : " + textBox2->Text + "\r\n";
-		textBox4->Text += "Дата народження:" + maskedTextBox1->Text + "\r\n";;
-		textBox4->Text += "Aдpeca:" + textBox3->Text + "\r\n";
-		textBox4->Text += "Kрaïнa: " + comboBox1->Text + "\r\n";
-		textBox4->Text += "Kypc: " + comboBox2->Text + "\r\n";
-		textBox4->Text += "rpyna: "
-			+ comboBox3->Text + "\r\n";
-		textBox4->Text += "Cneuiальнiсть:" + comboBox4->Text + "\r\n";
-	}
-	private: System::Void listBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
-		listBox1->Items->Remove(listBox1->SelectedItem);
 	}
 	};
 }
